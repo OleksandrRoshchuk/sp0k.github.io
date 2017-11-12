@@ -1,0 +1,25 @@
+th {
+  &.sortable {
+    position: relative;
+    cursor: pointer;
+    &:after {
+      font-family: FontAwesome;
+      content: "\f0dc";
+      position: absolute;
+      right: 8px;
+      color: #111;
+    }
+    &.sorting-desc {
+      &:after {
+        content: "\f0d7";
+      }
+    }
+    &.sorting-asc {
+      &:after {
+        content: "\f0d8";
+      }
+    }
+  }
+
+
+}
